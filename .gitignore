@@ -1,0 +1,6 @@
+template.django/.idea
+
+.venv
+venv
+
+.DS_Store
