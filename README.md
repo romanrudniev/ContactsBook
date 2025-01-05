@@ -15,7 +15,7 @@ edit your contacts in a table format.
      <li>Email</li>
      <li>Nationality</li>
 </ul>
-<h3>Example:</h3>
+<h3>Example table:</h3>
 <table>
  <tr>
      <th>№</th>
@@ -64,7 +64,7 @@ edit your contacts in a table format.
     <li>Email</li>
     <li>Nationality</li>
 </ul>
-<h3>Приклад:</h3>
+<h3>Приклад таблиці:</h3>
 <table>
     <tr>
         <th>№</th>
