@@ -7,7 +7,7 @@ edit your contacts in a table format.
 <hr>
 <h2>The table has the following sections:</h2>
 <ul>
-     <li>No.</li>
+     <li>№</li>
      <li>Photo</li>
      <li>First name</li>
      <li>Last name</li>
