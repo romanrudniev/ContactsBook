@@ -28,7 +28,7 @@ edit your contacts in a table format.
  </tr>
  <tr>
      <td>1</td>
-     <td>img</td>
+     <td><img></td>
      <td>Roman</td>
      <td>Rudniev</td>
      <td>1234567890</td>
