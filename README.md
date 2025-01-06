@@ -13,7 +13,7 @@ edit your contacts in a table format.
      <li>Last name</li>
      <li>Phone number</li>
      <li>Email</li>
-     <li>Nationality</li>
+     <li>Country of birth</li>
 </ul>
 <h3>Example table:</h3>
 <table>
@@ -24,7 +24,7 @@ edit your contacts in a table format.
      <th>Last name</th>
      <th>Phone number</th>
      <th>Email</th>
-     <th>Nationality</th>
+     <th>Country of birth</th>
  </tr>
  <tr>
      <td>1</td>
@@ -62,7 +62,7 @@ edit your contacts in a table format.
     <li>Last name</li>
     <li>Phone number</li>
     <li>Email</li>
-    <li>Nationality</li>
+    <li>Country of birth</li>
 </ul>
 <h3>Приклад таблиці:</h3>
 <table>
@@ -73,7 +73,7 @@ edit your contacts in a table format.
         <th>Last name</th>
         <th>Phone number</th>
         <th>Email</th>
-        <th>Nationality</th>
+        <th>Country of birth</th>
     </tr>
     <tr>
         <td>1</td>
