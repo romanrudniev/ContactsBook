@@ -77,7 +77,7 @@ edit your contacts in a table format.
     </tr>
     <tr>
         <td>1</td>
-        <td>img</td>
+        <td>img.png</td>
         <td>Roman</td>
         <td>Rudniev</td>
         <td>1234567890</td>
@@ -86,7 +86,7 @@ edit your contacts in a table format.
     </tr>
     <tr>
         <td>2</td>
-        <td>img</td>
+        <td>img2.jpg</td>
         <td>dtrgh</td>
         <td>dxbdghftyh</td>
         <td>0987654321</td>
