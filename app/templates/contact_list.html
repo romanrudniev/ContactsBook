@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact's Book{% endblock %}
+
+{% block content %}
+<!-- Left section: Contacts Table -->
+<div class="contacts-table">
+    <h2 class="text-center">Contacts</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>+123456789</td>
+                <td>johndoe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>+987654321</td>
+                <td>janesmith@outlook.com</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Right section: Action Buttons -->
+<div class="action-buttons">
+    <a href="#" class="btn btn-primary">New Contact</a>
+    <a href="#" class="btn btn-secondary">Edit Contact</a>
+    <a href="#" class="btn btn-danger">Delete Contact</a>
+    <a href="#" class="btn btn-info">About Contact</a>
+    <a href="#" class="btn btn-success">Display</a>
+</div>
+{% endblock %}
