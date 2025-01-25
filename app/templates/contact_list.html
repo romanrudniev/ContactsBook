@@ -9,7 +9,6 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">№</th>
                 <th scope="col">Photo</th>
                 <th scope="col">First name</th>
                 <th scope="col">Last name</th>
@@ -19,24 +18,40 @@
             </tr>
         </thead>
         <tbody>
+            {% for contact in contacts %}
             <tr>
-                <td>1</td>
-                <td>img.png</td>
-                <td>Roman</td>
-                <td>Rudniev</td>
-                <td>+123456789</td>
-                <td>romanrudniev007@gmail.com</td>
-                <td>Ukraine</td>
+                <td>
+                    {% if contact.photo %}
+                    <img scr="{{ contact.photo.url }}" alt="Contact`s photo" width="50">
+                    {% else %}
+                    <img src="../media/icon.jpg" alt="Photo" width="50">
+                    {% endif %}
+                </td>
+                <td>{{ contact.first_name }}</td>
+                <td>{{ contact.last_name }}</td>
+                <td>{{ contact.phone_number }}</td>
+                <td>{{ email }}</td>
+                <td>{{ country_of_birth }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>img2.jpg</td>
-                <td>Qwerty</td>
-                <td>Uio</td>
-                <td>+987654321</td>
-                <td>qwertyuio@outlook.com</td>
-                <td>Ukraine</td>
-            </tr>
+            {% endfor %}
+<!--            <tr>-->
+<!--                <td>1</td>-->
+<!--                <td>img.png</td>-->
+<!--                <td>Roman</td>-->
+<!--                <td>Rudniev</td>-->
+<!--                <td>+123456789</td>-->
+<!--                <td>romanrudniev007@gmail.com</td>-->
+<!--                <td>Ukraine</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>2</td>-->
+<!--                <td>img2.jpg</td>-->
+<!--                <td>Qwerty</td>-->
+<!--                <td>Uio</td>-->
+<!--                <td>+987654321</td>-->
+<!--                <td>qwertyuio@outlook.com</td>-->
+<!--                <td>Ukraine</td>-->
+<!--            </tr>-->
             <!-- Add more rows as needed -->
         </tbody>
     </table>
