@@ -9,7 +9,7 @@ class Contact(models.Model):
     email = models.EmailField()
     photo = models.ImageField(upload_to='contacts_photo/', blank=True, null=True)
     country_of_birth = models.CharField(max_length=50)
-    object = models.Manager()
+    #object = models.Manager()
 
 
     def __str__(self):
