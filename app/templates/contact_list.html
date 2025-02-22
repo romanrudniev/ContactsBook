@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+<!--{% load media %}-->
 {% block title %}Contact's Book{% endblock %}
 
 {% block content %}
@@ -21,16 +21,16 @@
             <tr>
                 <td>
                     {% if contact.photo %}
-                    <img scr="{{ contact.photo.url }}" alt="Contact`s photo" width="50">
+                    <img src="{{ contact.photo.url }}" alt="Contacts photo" width="50">
                     {% else %}
-                    <img src="../media/icon.jpg" alt="Photo" width="50">
+                    <img src="{% media 'icon.jpg' %}" alt="Photo" width="50">
                     {% endif %}
                 </td>
                 <td>{{ contact.first_name }}</td>
                 <td>{{ contact.last_name }}</td>
                 <td>{{ contact.phone_number }}</td>
-                <td>{{ email }}</td>
-                <td>{{ country_of_birth }}</td>
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.country_of_birth }}</td>
             </tr>
                     {% endfor %}
 <!--            <tr>-->
@@ -58,7 +58,7 @@
 
 <!-- Right section: Action Buttons -->
 <div class="action-buttons">
-    <a href="#" class="btn-new">New Contact
+    <a href="{% url 'add_contact' %}" class="btn-new">New Contact
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
             <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
             <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
