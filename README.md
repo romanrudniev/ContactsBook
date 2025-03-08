@@ -1,6 +1,6 @@
 <h1>Contact`s book</h1>
 <hr>
-by Rudniev Roman
+<h3>by Rudniev Roman</h3>
 <hr>
 This project is designed to allow you to add and
 edit your contacts in a table format.
@@ -45,6 +45,16 @@ edit your contacts in a table format.
      <td>Ukraine</td>
  </tr>
 </table>
+
+<h3>In this program you can:</h3>
+<ul>
+<li>Add contacts</li>
+<li>Edit contacts</li>
+<li>Read contact description</li>
+<li>Delete contacts</li>
+<li>You can make calls</li>
+</ul>
+
 <hr>
 <hr>
 <hr>
@@ -94,3 +104,12 @@ edit your contacts in a table format.
         <td>Ukraine</td>
     </tr>
 </table>
+
+<h3>У цій програмі можна:</h3>
+<ul>
+     <li>Додавати контакти</li>
+     <li>Редагувати контакти</li>
+     <li>Читати опис контакту</li>
+     <li>Видаляти контакти</li>
+     <li>Можна подзвонити</li>
+</ul>
