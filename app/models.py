@@ -7,7 +7,7 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=50)
     phone_number = models.CharField(max_length=15)
     email = models.EmailField()
-    photo = models.ImageField(upload_to='contacts_photo/', blank=True, null=True)
+    photo = models.ImageField(upload_to='contacts_photo/', default='icon.jpg' ,blank=True, null=True)
     country_of_birth = models.CharField(max_length=50)
     #object = models.Manager()
 

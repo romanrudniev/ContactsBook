@@ -17,13 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views
-from app.views import edit_contact
+from django.conf import settings
+from django.conf.urls.static import static
+from app.views import contact_list, add_contact, about_contact
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.contact_list, name='contact_list'),
     path('add/', views.add_contact, name='add_contact'),
-    path('edit/<int:contact_id>/', edit_contact, name='edit_contact'),
+    path('about/<int:contact_id>/', about_contact, name='about_contact'),
+
+
 
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

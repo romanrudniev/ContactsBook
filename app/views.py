@@ -18,3 +18,7 @@ def add_contact(request):
         form = ContactsForm()
     return render(request, 'contact_form.html', {'form': form})  # Виправлено відступ
 
+
+def about_contact(request, contact_id=1):
+    contact = get_object_or_404(Contact, id=contact_id)
+    return render(request, 'about_contact.html', {'contact': contact})
