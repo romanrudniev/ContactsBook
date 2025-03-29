@@ -9,16 +9,28 @@ def contact_list(request):
 
 
 def add_contact(request):
-    if request.method == 'POST':  # Виправлено
+    if request.method == 'POST':
         form = ContactsForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('contact_list')
     else:
         form = ContactsForm()
-    return render(request, 'contact_form.html', {'form': form})  # Виправлено відступ
+    return render(request, 'contact_form.html', {'form': form})
 
 
-def about_contact(request, contact_id):
-    contact = Contact.objects.get (id=contact_id)
-    return render(request, 'about_contact.html', {'contact': contact.id})
+def edit_contact(request, pk):
+    contact = get_object_or_404(Contact, pk=pk)
+    if request.method == 'POST':
+        form = ContactsForm(request.POST, request.FILES, instance=contact)
+        if form.is_valid():
+            form.save()
+            return redirect('contact_list')
+    else:
+        form = ContactsForm(instance=contact)
+    return render(request, 'contact_form.html', {'form': form})
+
+
+# def about_contact(request, contact_id):
+#     contact = Contact.objects.get (id=contact_id)
+#     return render(request, 'about_contact.html', {'contact': contact.id})

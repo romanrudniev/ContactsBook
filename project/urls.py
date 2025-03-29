@@ -19,7 +19,7 @@ from django.urls import path
 from app import views
 from django.conf import settings
 from django.conf.urls.static import static
-from app.views import contact_list, add_contact, about_contact
+from app.views import contact_list, add_contact
 
 
 
@@ -27,7 +27,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.contact_list, name='contact_list'),
     path('add/', views.add_contact, name='add_contact'),
-    path('about/<int:contact>/', views.about_contact, name='about_contact'),
+    path('/edit/<int>:pk/', views.edit_contact, name='edit_contact'),
+    # path('about/<int:contact>/', views.about_contact, name='about_contact'),
     # path('about/', views.about_contact, name='about_contact'),
 ]
 
