@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       selectedContactId = this.dataset.contactId;
 
       editButton.href = `edit/${selectedContactId}/`;
-      aboutButton.href = `about/${selectedContactId}/`; // Додаємо цю строку
+      aboutButton.href = `about/${selectedContactId}/`;
     });
   });
 });
