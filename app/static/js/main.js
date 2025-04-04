@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const rows = document.querySelectorAll(".contact-row");
   const editButton = document.getElementById("editButton");
+  const aboutButton = document.getElementById("aboutButton");
 
   rows.forEach(row => {
     row.addEventListener("click", function() {
@@ -15,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       selectedContactId = this.dataset.contactId;
 
-      editButton.href = `edit/${selectedContactId}/`
-
+      editButton.href = `edit/${selectedContactId}/`;
+      aboutButton.href = `about/${selectedContactId}/`; // Додаємо цю строку
     });
   });
-
 });

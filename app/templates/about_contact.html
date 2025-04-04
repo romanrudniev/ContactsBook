@@ -1,12 +1,50 @@
-<!--{% extends 'base.html' %}-->
-<!--{% block title %}About Contact{% endblock %}-->
+{% extends 'base.html' %}
+{% block title %}About Contact{% endblock %}
 
-<!--{% block content %}-->
-<!--<div class="contact-details">-->
-<!--    <h2>{{ contact.first_name }} {{ contact.last_name }}</h2>-->
-<!--    <img src="{{ contact.photo.url }}" alt="Contact Photo" width="100">-->
-<!--    <p>Phone number: {{ contact.phone_number }}</p>-->
-<!--    <p>Email: {{ contact.email }}</p>-->
-<!--    <p>Country of birth: {{ contact.country_of_birth }}</p>-->
-<!--</div>-->
-<!--{% endblock %}-->
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-container {
+        background: white;
+        text-align: center;
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-photo {
+        width: 120px;
+        text-align: center;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+        margin: 10px 0;
+    }
+</style>
+<div class="contact-container">
+    <img src="{{ contact.photo.url }}" alt="Contact Photo" class="contact-photo">
+    <h2>{{ contact.name }}</h2>
+    <p><strong>Phone number:</strong> {{ contact.phone_number }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    <p><strong>Country of birth:</strong> {{ contact.country_of_birth }}</p>
+</div>
+{% endblock %}
+
