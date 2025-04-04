@@ -21,9 +21,9 @@
     }
 
     .contact-photo {
-        width: 120px;
+        width: 300px;
         text-align: center;
-        height: 120px;
+        height: 300px;
         object-fit: cover;
         border-radius: 50%;
         border: 3px solid #ddd;
@@ -41,7 +41,7 @@
 </style>
 <div class="contact-container">
     <img src="{{ contact.photo.url }}" alt="Contact Photo" class="contact-photo">
-    <h2>{{ contact.name }}</h2>
+    <h2>{{ contact.first_name }} {{ contact.last_name }}</h2>
     <p><strong>Phone number:</strong> {{ contact.phone_number }}</p>
     <p><strong>Email:</strong> {{ contact.email }}</p>
     <p><strong>Country of birth:</strong> {{ contact.country_of_birth }}</p>
