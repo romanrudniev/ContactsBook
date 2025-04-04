@@ -20,7 +20,6 @@ def add_contact(request):
 
 
 def edit_contact(request, pk):
-    print(23)
     contact = get_object_or_404(Contact, pk=pk)
     if request.method == 'POST':
         form = ContactsForm(request.POST, request.FILES, instance=contact)
