@@ -35,8 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
         aboutButton.href = `about/${selectedContactId}/`;
       }
       if (deleteButton) {
-        deleteButton.href = `delete/${selectedContactId}/`;
+        deleteButton.onclick = function (e) {
+          e.preventDefault();
+          if (confirm("Are you sure you want to delete this contact?")) {
+            window.location.href = `delete/${selectedContactId}/`;
+          }
+        };
       }
     });
   });
 });
+
