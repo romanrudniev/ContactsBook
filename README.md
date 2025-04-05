@@ -33,7 +33,6 @@ edit your contacts in a table format.
      <td>Ukraine</td>
  </tr>
  <tr>
-     <td>2</td>
      <td>img</td>
      <td>dtrgh</td>
      <td>dxbdghftyh</td>
