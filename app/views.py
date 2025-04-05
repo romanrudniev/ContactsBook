@@ -35,3 +35,8 @@ def about_contact(request, contact_id):
     contact = Contact.objects.get (id=contact_id)
     return render(request, 'about_contact.html', {'contact': contact})
 
+def delete_contact(request, contact_id):
+    contact = get_object_or_404(Contact, id=contact_id)
+    contact.delete()
+    return redirect('contact_list')
+

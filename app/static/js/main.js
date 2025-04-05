@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
 //        detailsRow.style.display ==='none'
 //    }
 //  }
-
   let selectedRow = null;
   let selectedContactId = null;
 
   const rows = document.querySelectorAll(".contact-row");
   const editButton = document.getElementById("editButton");
   const aboutButton = document.getElementById("aboutButton");
+  const deleteButton = document.getElementById("deleteButton");
 
   rows.forEach(row => {
-    row.addEventListener("click", function() {
+    row.addEventListener("click", function () {
       if (selectedRow) {
         selectedRow.classList.remove("table-active");
       }
@@ -28,8 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
       selectedContactId = this.dataset.contactId;
 
-      editButton.href = `edit/${selectedContactId}/`;
-      aboutButton.href = `about/${selectedContactId}/`;
+      if (editButton) {
+        editButton.href = `edit/${selectedContactId}/`;
+      }
+      if (aboutButton) {
+        aboutButton.href = `about/${selectedContactId}/`;
+      }
+      if (deleteButton) {
+        deleteButton.href = `delete/${selectedContactId}/`;
+      }
     });
   });
 });

@@ -31,6 +31,7 @@ urlpatterns = [
     path('add/', views.add_contact, name='add_contact'),
     path('edit/<int:pk>/', views.edit_contact, name='edit_contact'),
     path('about/<int:contact_id>/', views.about_contact, name='about_contact'),
+    path('delete/<int:contact_id>/', views.delete_contact, name='delete_contact'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
