@@ -24,13 +24,13 @@ from app.views import contact_list, add_contact, about_contact
 
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.contact_list, name='contact_list'),
     path('add/', views.add_contact, name='add_contact'),
     path('edit/<int:pk>/', views.edit_contact, name='edit_contact'),
     path('about/<int:contact_id>/', views.about_contact, name='about_contact'),
-    # path('about/', views.about_contact, name='about_contact'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

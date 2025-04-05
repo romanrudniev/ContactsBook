@@ -17,7 +17,7 @@
         </thead>
         <tbody>
             {% for contact in contacts %}
-            <tr class="contact-row" data-contact-id="{{ contact.id }}">
+            <tr class="contact-row" data-contact-id="{{ contact.id }}" ondblclick="toggleDetails(this)">
                 <td>
                     <img src="{{ contact.photo.url }}" alt="Contacts photo" width="50">
                 </td>
@@ -26,6 +26,15 @@
                 <td>{{ contact.phone_number }}</td>
                 <td>{{ contact.email }}</td>
                 <td>{{ contact.country_of_birth }}</td>
+            </tr>
+<!--            -------------- -->
+            <tr id="details-{{ contact.id }}" style="display: none;">
+                <td colspan="5">
+                    <div>
+                        <a href="#">Call📞</a>
+                        <a href="#">Write✉️</a>
+                    </div>
+                </td>
             </tr>
             {% endfor %}
         </tbody>

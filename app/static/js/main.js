@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+//    window.toggleDetails = function(row) {
+//    const contactId = row.dataset.contactIf;
+//    const detailsRow = document.getElementById('details-' + contactId);
+//
+//    if (detailsRow.style.display ==='none') {
+//        detailsRow.style.display ==='table-row'
+//    } else {
+//        detailsRow.style.display ==='none'
+//    }
+//  }
+
   let selectedRow = null;
   let selectedContactId = null;
 

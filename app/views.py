@@ -34,3 +34,4 @@ def edit_contact(request, pk):
 def about_contact(request, contact_id):
     contact = Contact.objects.get (id=contact_id)
     return render(request, 'about_contact.html', {'contact': contact})
+
