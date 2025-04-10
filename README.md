@@ -48,7 +48,7 @@ edit your contacts in a table format.
     <li>Edit contacts</li>
     <li>Read contact description</li>
     <li>Delete contacts</li>
-    <li>You can make calls</li>
+    <li>You can call and write</li>
     <li>You can add photos to a contact</li>
 </ul>
 
@@ -104,6 +104,6 @@ edit your contacts in a table format.
     <li>Редагувати контакти</li>
     <li>Читати опис контакту</li>
     <li>Видаляти контакти</li>
-    <li>Можна подзвонити</li>
+    <li>Можна подзвонити та написати</li>
     <li>Можна додавати фото до контакту</li>
 </ul>
