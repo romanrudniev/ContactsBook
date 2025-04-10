@@ -4,7 +4,6 @@
 {% block content %}
 <style>
     body {
-        font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
@@ -39,12 +38,27 @@
         margin: 10px 0;
     }
 </style>
-<div class="contact-container">
-    <img src="{{ contact.photo.url }}" alt="Contact Photo" class="contact-photo">
-    <h2>{{ contact.first_name }} {{ contact.last_name }}</h2>
-    <p><strong>Phone number:</strong> {{ contact.phone_number }}</p>
-    <p><strong>Email:</strong> {{ contact.email }}</p>
-    <p><strong>Country of birth:</strong> {{ contact.country_of_birth }}</p>
+    <div class="contact-container">
+        <img src="{{ contact.photo.url }}" alt="Contact Photo" class="contact-photo">
+        <h2>{{ contact.first_name }} {{ contact.last_name }}</h2>
+        <p><strong>Phone number:</strong> {{ contact.phone_number }}</p>
+        <p><strong>Email:</strong> {{ contact.email }}</p>
+        <p><strong>Country of birth:</strong> {{ contact.country_of_birth }}</p>
+        <div style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'contact_list' %}" class="btn-back" style="
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#2980b9'"
+           onmouseout="this.style.backgroundColor='#3498db'">
+            ⬅ Back to Home
+        </a>
+    </div>
 </div>
 {% endblock %}
 
