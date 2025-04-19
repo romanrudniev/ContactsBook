@@ -28,13 +28,20 @@
                 <td>{{ contact.country_of_birth }}</td>
             </tr>
 <!--            -------------- -->
-            <tr id="details-{{ contact.id }}" style="display: none;">
+            <tr class="contact-details" id="details-{{ contact.id }}" style="display: none;">
+
                 <td colspan="5">
-                    <div>
-                        <a href="#">Call📞</a>
-                        <a href="#">Write✉️</a>
+
+                    <div class="d-flex justify-content-around">
+
+                        <a href="tel:{{ contact.phone_number }}" class="btn btn-success">  Call</a>
+
+                        <a href="mailto:{{ contact.email }}" class="btn btn-primary">  Write</a>
+
                     </div>
+
                 </td>
+
             </tr>
             {% endfor %}
         </tbody>
