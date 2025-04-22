@@ -54,27 +54,27 @@ edit your contacts in a table format.
 
 <h3>How to add a new contact:<h3>
 <ul>
-<li>To do this, click the "New contact" button</li>
+    <li>To do this, click the "New contact" button</li>
 </ul>
 
 <h3>How to edit a contact:<h3>
 <ul>
-<li>To do this, click on the contact in the table and then on the "Edit contact" button</li>
+    <li>To do this, click on the contact in the table and then on the "Edit contact" button</li>
 </ul>
 
 <h3>How to view contact information:<h3>
 <ul>
-<li>To do this, click on the contact in the table and then on the "About contact" button</li>
+    <li>To do this, click on the contact in the table and then on the "About contact" button</li>
 </ul>
 
 <h3>How to delete a contact:<h3>
 <ul>
-<li>To do this, click on the contact in the table and then on the "Delete contact" button</li>
+    <li>To do this, click on the contact in the table and then on the "Delete contact" button</li>
 </ul>
 
 <h3>How to call and write:<h3>
 <ul>
-<li>To do this, click on the contact in the table twice</li>
+    <li>To do this, click on the contact in the table twice</li>
 </ul>
 
 <hr>
