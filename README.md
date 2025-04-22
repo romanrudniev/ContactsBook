@@ -52,6 +52,31 @@ edit your contacts in a table format.
     <li>You can add photos to a contact</li>
 </ul>
 
+<h3>How to add a new contact:<h3>
+<ul>
+<li>To do this, click the "New contact" button</li>
+</ul>
+
+<h3>How to edit a contact:<h3>
+<ul>
+<li>To do this, click on the contact in the table and then on the "Edit contact" button</li>
+</ul>
+
+<h3>How to view contact information:<h3>
+<ul>
+<li>To do this, click on the contact in the table and then on the "About contact" button</li>
+</ul>
+
+<h3>How to delete a contact:<h3>
+<ul>
+<li>To do this, click on the contact in the table and then on the "Delete contact" button</li>
+</ul>
+
+<h3>How to call and write:<h3>
+<ul>
+<li>To do this, click on the contact in the table twice</li>
+</ul>
+
 <hr>
 <hr>
 <hr>
@@ -98,12 +123,27 @@ edit your contacts in a table format.
     </tr>
 </table>
 
-<h3>У цій програмі можна:</h3>
+<h3>Як додати новий контакт:<h3>
 <ul>
-    <li>Додавати контакти</li>
-    <li>Редагувати контакти</li>
-    <li>Читати опис контакту</li>
-    <li>Видаляти контакти</li>
-    <li>Можна подзвонити та написати</li>
-    <li>Можна додавати фото до контакту</li>
+    <li>Для цього треба нажати кнопку "New contact"</li>
+</ul>
+
+<h3>Як редагувати контакт:<h3>
+<ul>
+    <li>Для цього треба нажати на контакт в таблиці а потім на кнопку "Edit contact"</li>
+</ul>
+
+<h3>Як подивитися інформацію про контакт:<h3>
+<ul>
+    <li>Для цього треба нажати на контакт в таблиці а потім на кнопку "About contact"</li>
+</ul>
+
+<h3>Як видалити контакт:<h3>
+<ul>
+    <li>Для цього треба нажати на контакт в таблиці а потім на кнопку "Delete contact"</li>
+</ul>
+
+<h3>Як Подзвонити та написати:<h3>
+<ul>
+    <li>Для цього треба 2 рази нажати на контакт в таблиці</li>
 </ul>
